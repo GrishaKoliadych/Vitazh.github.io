@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Вітраж | Замов вікна у виробника</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+</head>
+
+<body class="container-fluid white">
+	<div class="row">
+		<div class="col-md-12 col-sm-12">
+			<div class = "header-wrapper col-md-12">
+				<div class = "header_main">
+					<a class="col-md-2 col-sm-12" href = "#">Вікна Вітраж</a>
+					<a class="col-md-2 col-sm-12" href = "index.html">Продукцiя</a>
+					<a class="col-md-2 col-sm-12" href = "#">Салони</a>
+					<a class="col-md-2 col-sm-12" href = "#">Контакти</a>
+					<a class="col-md-2 col-sm-12" href = "#">Про нас</a>
+				</div>
+			</div>
+
+			<div class="version-wrapper col-md-11 col-sm-11">
+				<div class="lam-version col-md-12 col-sm-12">
+					<div class="lam-title">Варiанти ламінації</div>
+					<div class="lam-img-wrapper col-md-12 col-sm-12">
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/1.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/2.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/3.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/4.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/5.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/6.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/7.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/8.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/9.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/10.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/11.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/12.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/13.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/14.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/16.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/17.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/18.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/19.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/20.jpg"></div>
+						<div class = "lam-img"><img class = "var-lam-img" src="tovar/laminatsia/21.jpg"></div>
+					</div>
+				</div>
+				<div class = "handle-version col-md-12 col-sm-12">
+					<div class = "handle-title">Кольори ручок</div>
+					<div class = "handle-img-wrapper col-md-12 col-sm-12">
+						<div class = "handle-img"><img class = "var-handle-img" src="tovar/laminatsia/серо-коричневый.jpg"></div>
+						<div class = "handle-img"><img class = "var-handle-img" src="tovar/laminatsia/серебро_светлое.jpg"></div>
+						<div class = "handle-img"><img class = "var-handle-img" src="tovar/laminatsia/серебро_натуральное.jpg"></div>
+						<div class = "handle-img"><img class = "var-handle-img" src="tovar/laminatsia/латунь.jpg"></div>
+						<div class = "handle-img"><img class = "var-handle-img" src="tovar/laminatsia/бронза.jpg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="demo-versions col-md-1 col-sm-1">
+				<img class = "img-lam-demo col-md-12 col-sm-12" src = "tovar/laminatsia/1_g.jpg">
+				<img class = "img-handle-demo col-md-12 col-sm-12" src = "tovar/laminatsia/img_two/0.png">
+			</div>
+		</div>
+	</div>
+
+	<script>
+		let varLamImg = document.querySelectorAll(".var-lam-img");
+		let varHandleImg = document.querySelectorAll('.var-handle-img');
+		varLamImg[0].style.border = "3px solid #eda71c";
+		varHandleImg[0].style.border = "3px solid #eda71c";
+		let imgOne = document.querySelector(".img-lam-demo");
+		let imgTwo = document.querySelector(".img-handle-demo");
+		for (let i = 0; i < varLamImg.length; i++) {
+			varLamImg[i].addEventListener('click', function() {
+			for (a = 0; a < 20; a++) {
+				varLamImg[a].style.border = "3px solid white";
+			}
+			varLamImg[i].style.border = "3px solid #eda71c";
+			imgOne.src = "tovar/laminatsia/img_one/" + i + ".jpg";
+			})
+		}
+		for (let i = 0; i < varHandleImg.length; i++) {
+			varHandleImg[i].addEventListener('click', function() {
+				for (a = 0; a < 5; a++) {
+					varHandleImg[a].style.border = "3px solid white";
+				}
+				varHandleImg[i].style.border = "3px solid #eda71c";
+				imgTwo.src = "tovar/laminatsia/img_two/" + i + ".png";
+			})
+		}
+	</script>
+</body>
+</html>
